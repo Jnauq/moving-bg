@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #546f7b;
+    min-height: 1000px;
+}
+
+.background {
+    position: relative;
+    background: url("./imgs/city.png");
+    height: 100vh;
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-position: 0 0;
+    animation: animate 15s linear infinite;
+}
+
+.car {
+    position: absolute;
+    bottom: 0px;
+    left: 30px;
+    width: 22em;
+    transform: rotateY(180deg);
+}
+
+@keyframes animate {
+    from{
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
